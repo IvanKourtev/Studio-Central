@@ -1,10 +1,23 @@
+/* Общи стилове */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Стилове за header */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Навигационно меню */
 header nav ul {
     list-style: none;
     display: flex;
@@ -22,39 +35,19 @@ header nav ul li a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Основно съдържание */
 main {
     padding: 1rem;
     text-align: center;
+    flex: 1;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header, footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
+/* Контактна секция */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -97,6 +90,7 @@ h1 {
     transition: color 0.3s ease;
 }
 
+/* Респонсивност за мобилни устройства */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column;
@@ -107,4 +101,13 @@ h1 {
         padding-left: 0;
         text-align: center;
     }
+}
+
+/* Стилове за футър */
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
