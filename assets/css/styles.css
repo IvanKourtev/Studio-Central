@@ -36,3 +36,75 @@ footer {
     bottom: 0;
     width: 100%;
 }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contact-map {
+    flex: 1;
+}
+
+.contact-info {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-info a:hover {
+    color: #007BFF;
+}
+
+.social-icon {
+    margin-right: 15px;
+    color: #333;
+}
+
+.social-icon:hover {
+    color: #007BFF;
+}
+
+.social-icon i {
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        padding-left: 0;
+        text-align: center;
+    }
+}
