@@ -7,11 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    /* background-image: url("../images/Logo.jpeg");
+    background-size: cover;
+    background-position: center; */
 }
 
 /* Стилове за header */
 header, footer {
-    background-color: #333;
+    background-color: #0d0d0d;
     color: white;
     text-align: center;
 }
@@ -21,7 +24,7 @@ header nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background: #333;
+    background: #0d0d0d;
     padding: 0.5rem;
 }
 
@@ -37,7 +40,7 @@ header nav ul li a {
 /* Стилове за футър */
 footer {
     margin-top: auto;
-    background-color: #333;
+    background-color: #0d0d0d;
     color: white;
     text-align: center;
     padding: 0%;
