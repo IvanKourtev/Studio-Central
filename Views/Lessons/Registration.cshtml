@@ -1,0 +1,40 @@
+@{
+    ViewData["Title"] = "Регистрация за уроци";
+}
+
+<div class="container mt-4">
+    <h2>Регистрация за уроци</h2>
+    <form id="registration-form" class="mt-4">
+        <div class="form-group">
+            <label for="name">Име</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Имейл</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="lesson-date">Дата на урока</label>
+            <input type="date" class="form-control" id="lesson-date" name="lesson-date" required>
+        </div>
+        <div class="form-group">
+            <label for="lesson-time">Час на урока</label>
+            <select class="form-control" id="lesson-time" name="lesson-time" required>
+                <option value="">Изберете час</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="notes">Бележки</label>
+            <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Регистрация</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="~/assets/js/registration.js"></script>
+} 

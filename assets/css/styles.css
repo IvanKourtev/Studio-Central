@@ -180,4 +180,74 @@ img.no-hover:hover {
     }
 }
 
+/* Цени */
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.price-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price-card:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.pricing h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Форма за записване */
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    text-align: center;
+    display: none;
+}

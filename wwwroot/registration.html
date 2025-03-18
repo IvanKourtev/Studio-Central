@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Записване за урок - Studio Central</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <div class="success-message">
+        Успешно записахте час! Ще бъдете пренасочени към началната страница...
+    </div>
+
+    <div class="container">
+        <h1>Записване за урок</h1>
+        <form id="booking-form">
+            <div class="form-group">
+                <label for="full-name">Име и фамилия:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lesson-type">Тип урок:</label>
+                <select id="lesson-type" name="lesson-type" required>
+                    <option value="">Изберете тип урок</option>
+                    <option value="individual">Индивидуален урок</option>
+                    <option value="group">Групов урок</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="lesson-date">Дата:</label>
+                <input type="date" id="lesson-date" name="lesson-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lesson-time">Час:</label>
+                <select id="lesson-time" name="lesson-time" required>
+                    <option value="">Изберете час</option>
+                </select>
+            </div>
+
+            <button type="submit">Запази час</button>
+        </form>
+    </div>
+
+    <script src="/assets/js/registration.js"></script>
+</body>
+</html> 

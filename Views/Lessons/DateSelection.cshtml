@@ -1,0 +1,39 @@
+@{
+    ViewData["Title"] = "Избор на дата и час";
+}
+
+<div class="container mt-4">
+    <h2>Избор на дата и час</h2>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Информация за клиента</h5>
+            <p class="card-text">
+                <strong>Име:</strong> <span id="client-name"></span><br>
+                <strong>Имейл:</strong> <span id="client-email"></span><br>
+                <strong>Телефон:</strong> <span id="client-phone"></span>
+            </p>
+        </div>
+    </div>
+
+    <form id="date-selection-form" class="mt-4">
+        <div class="form-group">
+            <label for="lesson-date">Дата на урока</label>
+            <input type="date" class="form-control" id="lesson-date" name="lesson-date" required>
+        </div>
+        <div class="form-group">
+            <label for="lesson-time">Час на урока</label>
+            <select class="form-control" id="lesson-time" name="lesson-time" required>
+                <option value="">Изберете час</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="notes">Бележки</label>
+            <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Запази час</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="~/assets/js/date-selection.js"></script>
+} 

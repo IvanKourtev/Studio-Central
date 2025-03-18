@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цени</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <header></header>
+    <div id="success-message" class="success-message">Успешно записан час!</div>
+    <form id="booking-form">
+        <label for="full-name">Три имена:</label>
+        <input type="text" id="full-name" name="full-name" required>
+    
+        <label for="email">Имейл:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+    
+        <label for="lesson-type">Избери урок:</label>
+        <select id="lesson-type" name="lesson-type" required>
+            <option value="drums">Уроци по барабани</option>
+            <option value="piano">Уроци по пиано</option>
+        </select>
+    
+        <label for="lesson-date">Избери дата:</label>
+        <input type="date" id="lesson-date" name="lesson-date" required>
+    
+        <label for="lesson-time">Избери час:</label>
+        <select id="lesson-time" name="lesson-time" required>
+        </select>
+    
+        <button type="submit">Запиши се</button>
+
+        <script src="/assets/js/registration.js"></script>
+    </form>
+    
+</body>
+
+</html>
